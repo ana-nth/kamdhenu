@@ -1,0 +1,263 @@
+# ============================================================
+# SITE CONFIG
+# ============================================================
+site:
+  name: "Kamdhenu 3D Global"
+  tagline: "Innovation in Plastic & Polymer Solutions"
+  description: >
+    Leading plastic recycling consultant and manufacturer of high-quality
+    recycled granules. Specializing in PP, HDPE, and LDPE production plants.
+  url: "https://kamdhenu3dglobal.com"
+  favicon: "/images/logo.jpg"
+
+# ============================================================
+# NAVIGATION
+# ============================================================
+nav:
+  logo: "/images/logo.jpg"
+  logo_alt: "Kamdhenu 3D Global"
+  links:
+    - label: "Home"
+      href: "/"
+    - label: "About"
+      href: "#about"
+    - label: "Products"
+      href: "#products"
+    - label: "Services"
+      href: "#services"
+    - label: "Contact"
+      href: "#contact"
+  cta:
+    label: "Get a Quote"
+    href: "#contact"
+
+# ============================================================
+# HERO SECTION
+# ============================================================
+hero:
+  headline: "Kamdhenu 3D. Precision in Every Pellet."
+  subheadline: >
+    From recovered scrap to premium-grade extrusions, we craft the sustainable 
+    building blocks that power tomorrow’s high-performance industries.
+  image: "/images/hero_pic.png"
+  image_alt: "Kamdhenu 3D Global Facility"
+  cta_primary:
+    label: "Explore Products"
+    href: "#products"
+  cta_secondary:
+    label: "Contact Us"
+    href: "#contact"
+
+# ============================================================
+# STATS BANNER
+# ============================================================
+stats:
+  - value: "50-500"
+    label: "KG/HR"
+    description: "Plant capacity specialization"
+  - value: "100+"
+    label: "Plants Optimized"
+    description: "Global consulting expertise"
+  - value: "15+"
+    label: "Years Experience"
+    description: "Industry-proven reliability"
+
+# ============================================================
+# ABOUT SECTION
+# ============================================================
+about:
+  label: "Who We Are"
+  headline: "Leading Experts in Plastic Recycling"
+  body: >
+    Kamdhenu 3D Global is committed to delivering high-quality plastic raw materials 
+    for different industries including packaging, automotive, and consumer goods. 
+    Our focus is on quality, reliability, and long-term partnerships with our customers.
+
+    We are specialists for HDPE, LDPE, and PP granules manufacturing plants ranging 
+    from 50 to 500 kg/hr. Our expert team provides end-to-end consulting for plant 
+    setup, process optimization, and machinery selection.
+  highlights:
+    - "Plant Setup & Layout Design"
+    - "Machinery & Process Expert"
+    - "Cost Optimization Specialists"
+    - "Raw Material Sourcing"
+  image_1: "/images/extruder-1.png"
+  image_1_alt: "Advanced Plastic Extrusion Machinery"
+  image_2: "/images/extruder-2.png"
+  image_2_alt: "Kamdhenu 3D Global Production Facility"
+
+# ============================================================
+# PRODUCTS
+# ============================================================
+products:
+  label: "Our Products"
+  headline: "High-Quality Plastic Granules"
+  subheadline: >
+    We supply premium grade recycled granules engineered for performance 
+    and sustainability across various industrial applications.
+  items:
+    - id: "pp-granules"
+      category: "Recycled"
+      name: "PP Granules"
+      description: >
+        High-performance Polypropylene granules suitable for injection 
+        molding and woven bags applications.
+      image: "/images/pp-granules.png"
+      image_alt: "Industrial Polypropylene (PP) Granules"
+
+    - id: "hdpe-granules"
+      category: "Recycled"
+      name: "HDPE Granules"
+      description: >
+        Durable High-Density Polyethylene granules ideal for blow 
+        molding and pipe extrusion.
+      image: "/images/hdpe-granules.png"
+      image_alt: "High-Density Polyethylene (HDPE) Granules"
+
+    - id: "ldpe-granules"
+      category: "Recycled"
+      name: "LDPE Granules"
+      description: >
+        Flexible Low-Density Polyethylene granules for high-quality 
+        film production and packaging.
+      image: "/images/ldpe-granules.png"
+      image_alt: "Low-Density Polyethylene (LDPE) Granules"
+
+    - id: "reprocessed-granules"
+      category: "Sustainability"
+      name: "Reprocessed Plastic Granules"
+      description: >
+        Eco-friendly reprocessed granules that offer cost-effective 
+        alternatives without compromising on quality.
+      image: "/images/reprocessed-granules.jpg"
+      image_alt: "Reprocessed Plastic Granules"
+
+# ============================================================
+# SERVICES (CONSULTING PACKAGES)
+# ============================================================
+services:
+  label: "Consulting Packages"
+  headline: "Expert Plant Solutions"
+  items:
+    - title: "Basic Package"
+      color: "green"
+      description: "Foundational planning for your recycling project."
+      features:
+        - "Business plan creation"
+        - "Detailed project report"
+        - "Machinery list"
+        - "Project costing"
+    - title: "Standard Package"
+      color: "yellow"
+      description: "Advanced design and operational setup."
+      features:
+        - "Layout design"
+        - "Vendor connections"
+        - "Process guidance"
+        - "Output optimization"
+    - title: "Premium Package"
+      color: "red"
+      description: "Full-scale implementation and post-setup support."
+      features:
+        - "Complete plant setup"
+        - "On-site technical support"
+        - "Staff training"
+        - "First production supervision"
+
+# ============================================================
+# CORE SERVICES
+# ============================================================
+features:
+  label: "Core Services"
+  headline: "Why Partner With Us"
+  items:
+    - icon: "factory"
+      title: "Plant Setup"
+      description: "Professional layout, machinery selection, and costing for manufacturing units."
+    - icon: "truck"
+      title: "Material Sourcing"
+      description: "Reliable raw material sourcing through our extensive scrap supplier network."
+    - icon: "settings"
+      title: "Process Optimization"
+      description: "Improving output and reducing costs through process expert intervention."
+    - icon: "users"
+      title: "Vendor Connections"
+      description: "Direct connections with quality vendors for machines, dies, and molds."
+
+# ============================================================
+# TESTIMONIALS
+# ============================================================
+testimonials:
+  label: "Client Trust"
+  headline: "What Our Partners Say"
+  items:
+    - quote: >
+        Kamdhenu's expertise in plant setup was instrumental in our growth. 
+        Their costing analysis saved us 20% on initial machinery investment.
+      name: "Rajesh Sharma"
+      title: "CEO, EcoPolymers India"
+    - quote: >
+        The quality of their HDPE granules is consistently high. 
+        A reliable partner for long-term manufacturing needs.
+      name: "Amit Patel"
+      title: "Production Head, GreenPack"
+    - quote: >
+        Professional consulting and end-to-end support. They made our 
+        transition to recycled PP seamless and highly profitable.
+      name: "Suresh Kumar"
+      title: "Director, PolyNex"
+    - quote: >
+        Their knowledge of machinery sourcing is unmatched in the Indian market. 
+        They truly understand the nuances of plastic manufacturing.
+      name: "Meera Reddy"
+      title: "Founder, SustiPlastic"
+    - quote: >
+        Reliable, transparent, and expert. Kamdhenu is the gold standard 
+        for plastic recycling consulting and raw material quality.
+      name: "Vikram Singh"
+      title: "Operations Manager, TechFlow"
+
+# ============================================================
+# FOUNDER SECTION
+# ============================================================
+founder:
+  name: "Vishal Vashisht"
+  title: "Founder, Kamdhenu 3D Global"
+  image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80"
+  image_alt: "Kamdhenu 3D Global Leadership"
+  quote: >
+    At Kamdhenu, we're not just molding plastic; we're crafting the silent, 
+    sturdy components that hold our world together, driven by a simple promise: 
+    to make everything we touch better, stronger, and more enduring.
+
+# ============================================================
+# CONTACT
+# ============================================================
+contact:
+  label: "Get In Touch"
+  headline: "Start Your Project Today"
+  subheadline: >
+    Whether you need raw materials or expert plant setup consulting, 
+    our team is ready to help you optimize your plastic manufacturing business.
+  details:
+    location: "Plot No. 45, Street No. E3, Saroorpur Industrial Area, Sohna Road, Faridabad, Haryana 121005"
+    phone: "+91 88009 11059 / +91 76786 83765"
+    email: "waytovashisht@gmail.com"
+    maps: "https://maps.app.goo.gl/BubbcxVUatrM9hYa7"
+  social:
+    linkedin: "#"
+    instagram: "#"
+  form:
+    endpoint: ""
+
+# ============================================================
+# FOOTER
+# ============================================================
+footer:
+  tagline: "Innovation in Plastic & Polymer Solutions"
+  copyright: "© 2026 Kamdhenu 3D Global. All rights reserved."
+  links:
+    - label: "Privacy Policy"
+      href: "/privacy"
+    - label: "Terms of Service"
+      href: "/terms"
