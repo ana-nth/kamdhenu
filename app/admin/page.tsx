@@ -1,8 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Plus, Trash2, Save, X, Lock, LogOut, Upload, CheckCircle } from 'lucide-react';
+import { Trash2, Save, Lock, LogOut, Upload, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/Button';
 import { SiteContent } from '@/lib/content';
 
 export default function AdminPage() {
@@ -87,10 +86,11 @@ export default function AdminPage() {
     }
   };
 
-  const updateValue = (path: string[], value: any) => {
+  const updateValue = (path: string[], value: string | number | boolean | object) => {
     if (!content) return;
     const newContent = { ...content };
-    let current: any = newContent;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let current = newContent as any;
     for (let i = 0; i < path.length - 1; i++) {
       current = current[path[i]];
     }
@@ -98,10 +98,11 @@ export default function AdminPage() {
     setContent(newContent);
   };
 
-  const addItem = (path: string[], template: any) => {
+  const addItem = (path: string[], template: object) => {
     if (!content) return;
     const newContent = { ...content };
-    let current: any = newContent;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let current = newContent as any;
     for (let i = 0; i < path.length; i++) {
         current = current[path[i]];
     }
@@ -112,7 +113,8 @@ export default function AdminPage() {
   const removeItem = (path: string[], index: number) => {
     if (!content) return;
     const newContent = { ...content };
-    let current: any = newContent;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let current = newContent as any;
     for (let i = 0; i < path.length; i++) {
         current = current[path[i]];
     }
@@ -431,7 +433,7 @@ function ImageUploadField({ label, value, onChange }: { label: string, value: st
         <div className="flex items-center gap-6 p-4">
             {value ? (
                 <div className="relative w-16 h-16 bg-white/5 border border-white/10 shrink-0">
-                    <img src={value} className="w-full h-full object-cover" />
+                    <img src={value} alt="Preview" className="w-full h-full object-cover" />
                 </div>
             ) : (
                 <div className="w-16 h-16 bg-white/5 border border-dashed border-white/10 flex items-center justify-center shrink-0">
