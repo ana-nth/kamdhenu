@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
