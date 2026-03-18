@@ -72,7 +72,7 @@ export default function Products({ products }: { products: SiteContent['products
             ref={scrollRef}
             className="flex gap-px bg-border border border-border overflow-x-auto snap-x snap-mandatory no-scrollbar"
           >
-            {products.items.map((product, i) => (
+            {products.items.map((product) => (
               <div 
                 key={product.id} 
                 className="min-w-full md:min-w-[50%] lg:min-w-[33.33%] bg-bg p-8 md:p-12 snap-start group hover:bg-surface transition-all duration-500 flex flex-col"
