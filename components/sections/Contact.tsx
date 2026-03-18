@@ -1,20 +1,10 @@
 'use client';
-import { useState } from 'react';
 import { MapPin, Phone, Mail, Linkedin, Instagram } from 'lucide-react';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
-import { Button } from '@/components/ui/Button';
 import { SiteContent } from '@/lib/content';
 
 export default function Contact({ contact }: { contact: SiteContent['contact'] }) {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for your message. We will get back to you soon!');
-    setForm({ name: '', email: '', message: '' });
-  };
-
   return (
     <section id="contact" className="py-24 md:py-32 lg:py-40 bg-bg border-t border-border">
       <div className="px-6 md:px-12 xl:px-20 max-w-[1400px] mx-auto">
@@ -40,8 +30,18 @@ export default function Contact({ contact }: { contact: SiteContent['contact'] }
                     <div className="p-4 border border-accent/20 bg-accent/5 group-hover:bg-accent group-hover:text-bg transition-all"><Phone size={24} /></div>
                     <span className="text-[0.7rem] uppercase tracking-[0.2em] font-body font-bold">Phone</span>
                  </div>
-                 <p className="text-muted-light text-lg">{contact.details.phone}</p>
-                 <a href={`tel:${contact.details.phone}`} className="text-accent text-xs uppercase tracking-widest mt-auto border-b border-accent/20 w-fit pb-1 hover:border-accent">Call Now</a>
+                 <div className="flex flex-col gap-2">
+                   {contact.details.phone.split('/').map((num, i) => (
+                     <a 
+                       key={i} 
+                       href={`tel:${num.trim().replace(/\s+/g, '')}`} 
+                       className="text-muted-light text-lg whitespace-nowrap hover:text-accent transition-colors w-fit"
+                     >
+                       {num.trim()}
+                     </a>
+                   ))}
+                 </div>
+                 <a href={`tel:${contact.details.phone.split('/')[0].trim().replace(/\s+/g, '')}`} className="text-accent text-xs uppercase tracking-widest mt-auto border-b border-accent/20 w-fit pb-1 hover:border-accent">Call Now</a>
               </div>
 
               <div className="flex flex-col gap-6 p-10 bg-surface border border-border hover:border-accent transition-colors group">
